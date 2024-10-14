@@ -10,13 +10,12 @@
 
   <title>Frontend Mentor | QR code component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    @font-face {
-      font-family: 'Outfit';
-      src: url("https://fonts.google.com/specimen/Outfit");
-    }
-
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -44,18 +43,19 @@
 
     .modal-text {
       font-family: 'Outfit', sans-serif;
-      font-size: 15px;
       text-align: center;
       padding-left: 30px;
       padding-right: 30px;
     }
 
-    .modal-text h3 {
+    .modal-text h1 {
+      font-size: 22px;
       font-weight: 700;
       color: hsl(218, 44%, 22%);
     }
 
     .modal-text p {
+      font-size: 15px;
       font-weight: 400;
       color: hsl(216, 15%, 48%);
     }
@@ -72,23 +72,21 @@
 </head>
 
 <body>
-  <div class="modal">
+  <main role="main" class="modal">
     <div>
-      <img src="/images/image-qr-code.png" height="288px" width="288px">
+      <img src="/images/image-qr-code.png" height="288" width="288" alt="QR code">
     </div>
     <div class="modal-text">
-      <h3>Improve your front-end skills by building projects</h3>
+      <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
+  </main>
 
-  </div>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  <footer role="contentinfo" class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+      Mentor</a>.
     Coded by <a href="#">Ahmed Elshafey</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
